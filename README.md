@@ -37,7 +37,7 @@ Phantom Arsenal is a specialized collection of cybersecurity tools designed for 
 
 ### ⏰ **CHRONOGHOST** `tools/time/chronoghost.sh`
 ```bash
-./chronoghost.sh
+sudo ./tools/time/chronoghost.sh [wifi_interface]
 ```
 **Temporal Synchronization Protocol**
 - GPS-based time synchronization for wardriving operations
@@ -47,7 +47,7 @@ Phantom Arsenal is a specialized collection of cybersecurity tools designed for 
 
 ### 📡 **GHOST JAMMER** `tools/rf/ghost_jammer.py`
 ```bash
-python3 ghost_jammer.py
+sudo ./tools/rf/ghost_jammer.py
 ```
 **Neural Interface Signal Generator v1.0**
 - 15KHz electromagnetic pulse emission system
@@ -58,7 +58,7 @@ python3 ghost_jammer.py
 
 ### 🌪️ **SHADOW PULSE** `tools/rf/shadow_pulse.py`
 ```bash
-python3 shadow_pulse.py <cu8_file> [options]
+sudo ./tools/rf/shadow_pulse.py <cu8_file> [options]
 ```
 **RF Signal Infiltration & Replay System v1.0**
 - Advanced electromagnetic spectrum analysis
@@ -110,7 +110,7 @@ chmod -R +x tools/
 ### 2. **Neural Interface Calibration**
 ```bash
 # Test GPIO connectivity
-python3 -c "import RPi.GPIO as GPIO; print('Neural interface online')"
+sudo python3 -c "import RPi.GPIO as GPIO; print('Neural interface online')"
 ```
 
 ### 3. **RF Spectrum Verification**
@@ -126,19 +126,19 @@ rtl_test -t
 ### 🎯 **Wardriving Operations**
 ```bash
 # Temporal synchronization
-./tools/timing/chronoghost.sh
+sudo ./tools/timing/chronoghost.sh
 ```
 
 ### 🔊 **RF 433MHz Jamming Protocols**
 ```bash
 # Spectral interference deployment
-python3 tools/rf/ghost_jammer.py
+sudo ./tools/rf/ghost_jammer.py
 ```
 
 ### 🔊 **RF 433MHz Replay Signals**
 ```bash
 # Extracts pulse patterns and executes precision RF replay operations
-python3 tools/rf/shadow_pulse.py captured_signals.cu8
+sudo ./tools/rf/shadow_pulse.py captured_signals.cu8
 ```
 
 ---
