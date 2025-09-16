@@ -104,7 +104,7 @@ sudo raspi-config
 ```bash
 git clone https://github.com/hardrive9000/phantom-arsenal.git
 cd phantom-arsenal
-chmod +x setup.sh
+chmod -R +x tools/
 ```
 
 ### 2. **Neural Interface Calibration**
