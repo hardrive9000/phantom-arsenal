@@ -5,8 +5,10 @@
 # Uso: ./chronoghost.sh [interfaz_wifi]
 
 # Configuracion
-GPS_PORT="/dev/rfcomm0"
-BAUD_RATE="4800"
+# GPS_PORT="/dev/rfcomm0"
+GPS_PORT="/dev/ttyS0"
+# BAUD_RATE="4800"
+BAUD_RATE="9600"
 TIMEOUT=30
 WIFI_INTERFACE="${1:-wlan1}"  # Usar parametro o wlan1 por defecto
 
