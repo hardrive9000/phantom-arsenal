@@ -69,6 +69,20 @@ sudo ./tools/rf/shadow_pulse.py <cu8_file> [options]
 
 ---
 
+### 👁️ **SPECTRE ACCESS** `access/spectre_access.sh`
+```bash
+./spectre_access.sh
+```
+**Quantum Portal Generator v1.0**
+- WiFi QR code generation for rapid network deployment
+- Multi-protocol support: WPA/WEP/Open networks
+- Hidden SSID compatibility
+- Special character sanitization engine
+- UTF8 terminal visualization + PNG export
+- Smartphone-compatible quantum signatures
+
+---
+
 ## ⚡ DEPLOYMENT REQUIREMENTS
 
 ### 🔧 Hardware Prerequisites
@@ -87,6 +101,9 @@ pip3 install RPi.GPIO
 
 # RF Analysis Tools
 sudo apt install -y rtl-sdr
+
+# Spectre Access Tools
+sudo apt install -y qrencode
 ```
 
 ### 🛡️ Kali Pi-Tail Setup
@@ -139,6 +156,12 @@ sudo ./tools/rf/ghost_jammer.py
 ```bash
 # Extracts pulse patterns and executes precision RF replay operations
 sudo ./tools/rf/shadow_pulse.py captured_signals.cu8
+```
+
+### **Spectre Access Operations**
+```bash
+# Generates quantum-encoded access portals (QR codes - UTF8 terminal visualization) for wireless networks
+sudo ./tools/access/spectre_access.sh
 ```
 
 ---
