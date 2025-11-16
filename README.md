@@ -161,7 +161,7 @@ sudo ./tools/rf/shadow_pulse.py captured_signals.cu8
 ### 🔐 **Spectre Access Operations**
 ```bash
 # Generates quantum-encoded access portals (QR codes - UTF8 terminal visualization) for wireless networks
-sudo ./tools/access/spectre_access.sh
+./tools/access/spectre_access.sh
 ```
 
 ---
