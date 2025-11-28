@@ -68,3 +68,20 @@ if [ "$save_image" = "s" ] || [ "$save_image" = "S" ]; then
     qrencode -o "$filename" "$qr_string"
     echo "Guardado como: $filename"
 fi
+
+echo
+read -p "¿Servir imagen por HTTP para descargar? (s/n): " serve_http
+if [ "$serve_http" = "s" ] || [ "$serve_http" = "S" ]; then
+    # Guardar en /tmp
+    qrencode -o /tmp/wifi_qr.png -s 10 "$qr_string"
+    
+    # Mostrar IP del servidor
+    echo -e "\n=== Servidor HTTP iniciado ==="
+    echo "Abre en tu navegador:"
+    IP=$(hostname -I | awk '{print $1}')
+    echo "http://${IP}:8080/wifi_qr.png"
+    echo -e "\nPresiona Ctrl+C para detener el servidor\n"
+    
+    cd /tmp
+    python3 -m http.server 8080
+fi
