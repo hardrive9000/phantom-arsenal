@@ -83,6 +83,21 @@ sudo ./tools/rf/shadow_pulse.py <cu8_file> [options]
 
 ---
 
+### 🌑 **DARK RECON** `network/dark_recon.sh`
+```bash
+sudo ./dark_recon.sh <SSID> <PASSWORD> <INTERFACE> [--list|--smb|--all]
+```
+**Advanced Network Intelligence System v1.0**
+- Deep reconnaissance with automated WiFi infiltration
+- Interactive SMB shell (anonymous/authenticated modes)
+- Complete device enumeration with MAC resolution
+- Share browsing and file manipulation capabilities
+- Automatic network segment detection
+- Secure credential handling and process cleanup
+- Support for hidden networks and domain authentication
+
+---
+
 ## ⚡ DEPLOYMENT REQUIREMENTS
 
 ### 🔧 Hardware Prerequisites
@@ -164,6 +179,12 @@ sudo ./tools/rf/shadow_pulse.py captured_signals.cu8
 ./tools/access/spectre_access.sh
 ```
 
+### 🧠 **Network Intelligence**
+```bash
+# Deep network intelligence with SMB infiltration
+sudo ./tools/network/dark_recon.sh "TargetSSID" "password123" wlan1 --all
+```
+
 ---
 
 ## ⚠️ OPERATIONAL SECURITY
@@ -200,7 +221,7 @@ sudo ./tools/rf/shadow_pulse.py captured_signals.cu8
 
 ## 📜 LICENSE & ATTRIBUTION
 
-**Apache License** - See [LICENSE](LICENSE) for details
+**The Unlicense (Public Domain)** - See [LICENSE](LICENSE) for details
 
 **Acknowledgments:**
 - Kali Linux Pi-Tail Project
